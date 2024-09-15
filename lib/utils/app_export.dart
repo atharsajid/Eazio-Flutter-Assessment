@@ -1,0 +1,16 @@
+export 'package:eazio_flutter_assessment/constant/app_color.dart';
+export 'package:eazio_flutter_assessment/constant/app_constant.dart';
+export 'package:eazio_flutter_assessment/constant/app_images.dart';
+export 'package:eazio_flutter_assessment/constant/app_strings.dart';
+export 'package:eazio_flutter_assessment/screens/home_screen/controller/home_screen_controller.dart';
+export 'package:eazio_flutter_assessment/utils/extensions/double_extensions.dart';
+export 'package:eazio_flutter_assessment/utils/size_utils.dart';
+export 'package:eazio_flutter_assessment/utils/utils.dart';
+export 'package:eazio_flutter_assessment/widgets/custom_app_bar.dart';
+export 'package:eazio_flutter_assessment/widgets/custom_container.dart';
+export 'package:eazio_flutter_assessment/widgets/custom_image_view.dart';
+export 'package:eazio_flutter_assessment/widgets/custom_text_widget.dart';
+export 'package:eazio_flutter_assessment/widgets/custsom_divider.dart';
+export 'package:eazio_flutter_assessment/screens/home_screen/model/user_model.dart';
+export 'package:flutter/material.dart';
+export 'package:get/get.dart';

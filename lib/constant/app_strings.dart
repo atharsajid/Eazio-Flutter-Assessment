@@ -1,0 +1,33 @@
+class AppStrings {
+  static const String willImplementLater = "This feature will be implemented later.";
+  static const String organizationInsights = "Organization Insights.";
+  static const String trackOrganizationInsights = "Track Your Organization Stats Insights";
+  static const String manageWidgets = "manage Widgets";
+  static const String welcomeBack = "Welcome Back";
+  static const String takeALookOurReport = "Take A Look at Our Weekly Reports.";
+  static const String averageLateAndOverTime = "Average Late & Overtime";
+  static const String avgLateness = "Avg. Lateness";
+  static const String avgOvertime = "Avg. Overtime";
+  static const String payrollFinance = "Payroll Finance";
+  static const String totalProcessed = "Total Processed";
+  static const String avgOvertimeAlt = "Avg.Overtime";
+  static const String activity = "Activity";
+  static const String headCount = "Head Count";
+  static const String avgLeaves = "Avg. \nLeaves";
+  static const String avgAttendance = "Avg. \nAttendance";
+  static const String totalEmployees = "Total \nEmployees";
+  static const String totalInternship = "Total \nInternship";
+  static const String attendanceSummary = "Attendance Summary";
+  static const String today = "Today";
+  static const String thisWeek = "This Week";
+  static const String thisMonth = "This Month";
+  static const String absents = "Absents";
+  static const String late = "Late";
+  static const String onTime = "On-Time";
+  static const String attendance = "Attendance";
+  static const String thisWeekAlt = "This Week";
+  static const String learnMore = "Learn more";
+  static const String viewFullReport = "View full report";
+  static const String minute = "Min";
+  static const String hour = "Hr";
+}
