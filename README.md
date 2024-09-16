@@ -7,11 +7,8 @@ Eazio Flutter Assessment project built using **Flutter** and **Dart**. It implem
 - [Features](#features)
 - [Technologies](#technologies)
 - [Architecture](#architecture)
-- [Project Structure](#project-structure)
-- [Setup Instructions](#setup-instructions)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
@@ -34,4 +31,10 @@ This project follows the **Model-View-Controller (MVC)** architecture pattern:
 - **Model**: Manages the data of the application.
 - **View**: Responsible for the UI and rendering widgets on the screen.
 - **Controller**: Acts as the mediator between the Model and View, handling input and updating the view accordingly.
+
+## Screenshots
+
+![Home Screen](assets/screenshots/screenshot1.jpg)
+![Weekly Report](assets/screenshots/screenshot2.jpg)
+![Attendance Summary](assets/screenshots/screenshot3.jpg)
 
