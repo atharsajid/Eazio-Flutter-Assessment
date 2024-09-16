@@ -1,5 +1,4 @@
 import 'package:eazio_flutter_assessment/utils/app_export.dart';
-import 'package:flutter/material.dart';
 
 class AttendanceSummaryWidget extends StatelessWidget {
   const AttendanceSummaryWidget({super.key});
@@ -41,29 +40,111 @@ class AttendanceSummaryWidget extends StatelessWidget {
             ),
           ),
           24.verticalSpace,
-          Obx(() {
-            return SegmentedButton<String>(
-              segments: const [
-                ButtonSegment(
-                  value: AppStrings.today,
-                  label: MyText(text: AppStrings.today),
+          Row(
+            children: [
+              Padding(
+                padding: getPadding(left: 16, right: 16),
+                child: const AttendanceSummaryButton(),
+              ),
+            ],
+          ),
+          16.verticalSpace,
+          const CustomDivider(),
+          16.verticalSpace,
+          Padding(
+            padding: getPadding(left: 16, right: 16),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    CustomCategoryIndicatorWidget(
+                      color: AppColors.lightRed,
+                      title: AppStrings.absents,
+                    ),
+                    12.horizontalSpace,
+                    CustomCategoryIndicatorWidget(
+                      color: AppColors.orange400,
+                      title: AppStrings.late,
+                    ),
+                    12.horizontalSpace,
+                    CustomCategoryIndicatorWidget(
+                      color: AppColors.green,
+                      title: AppStrings.onTime,
+                    ),
+                    12.horizontalSpace,
+                  ],
                 ),
-                ButtonSegment(
-                  value: AppStrings.thisWeek,
-                  label: MyText(text: AppStrings.thisWeek),
-                ),
-                ButtonSegment(
-                  value: AppStrings.thisMonth,
-                  label: MyText(text: AppStrings.thisMonth),
+                4.verticalSpace,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Padding(
+                      padding: getPadding(bottom: 30),
+                      child: RotatedBox(
+                        quarterTurns: 3,
+                        child: MyText(
+                          text: AppStrings.attendance,
+                          fontSize: getFontSize(12),
+                          fontWeight: FontWeight.w500,
+                          fontColor: AppColors.gray600,
+                        ),
+                      ),
+                    ),
+                    Column(
+                      children: [
+                        const AttendanceGraphWidget(),
+                        Obx(() {
+                          return MyText(
+                            text: controller.summaryButtonSelected.value.firstOrNull ?? "",
+                            fontSize: getFontSize(12),
+                            fontWeight: FontWeight.w500,
+                            fontColor: AppColors.gray600,
+                          );
+                        })
+                      ],
+                    ),
+                  ],
                 ),
               ],
-              multiSelectionEnabled: false,
-              showSelectedIcon: false,
-              style: ButtonStyle(),
-              onSelectionChanged: controller.onAttendanceSummaryButtonChange,
-              selected: controller.summaryButtonSelected.value,
-            );
-          }),
+            ),
+          ),
+          16.verticalSpace,
+          const CustomDivider(),
+          8.verticalSpace,
+          Padding(
+            padding: getPadding(
+              left: 16,
+              right: 16,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                MyText(
+                  text: AppStrings.learnMore,
+                  fontWeight: FontWeight.w600,
+                  fontColor: AppColors.gray600,
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Utils.toastMessage(AppStrings.willImplementLater);
+                  },
+                  child: CustomContainer(
+                    padding: getPadding(left: 16, right: 16, top: 10, bottom: 10),
+                    radius: 8,
+                    border: Border.all(color: AppColors.gray300),
+                    color: AppColors.white,
+                    boxShadow: Utils.lightGrayShadow,
+                    child: const MyText(
+                      text: AppStrings.viewFullReport,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
+          14.verticalSpace,
         ],
       ),
     );

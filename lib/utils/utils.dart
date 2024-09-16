@@ -1,13 +1,4 @@
-import 'package:eazio_flutter_assessment/constant/app_color.dart';
-import 'package:eazio_flutter_assessment/constant/app_images.dart';
-import 'package:eazio_flutter_assessment/utils/extensions/double_extensions.dart';
-import 'package:eazio_flutter_assessment/utils/size_utils.dart';
-import 'package:eazio_flutter_assessment/widgets/custom_container.dart';
-import 'package:eazio_flutter_assessment/widgets/custom_image_view.dart';
-import 'package:eazio_flutter_assessment/widgets/custom_text_widget.dart';
-import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:get/get.dart';
+import 'package:eazio_flutter_assessment/utils/app_export.dart';
 
 class Utils {
   static final FToast showToast = FToast();

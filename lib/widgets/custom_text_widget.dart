@@ -1,7 +1,4 @@
-import 'package:eazio_flutter_assessment/constant/app_color.dart';
-import 'package:eazio_flutter_assessment/constant/app_constant.dart';
-import 'package:eazio_flutter_assessment/utils/size_utils.dart';
-import 'package:flutter/material.dart';
+import 'package:eazio_flutter_assessment/utils/app_export.dart';
 
 class MyText extends StatelessWidget {
   final String text;

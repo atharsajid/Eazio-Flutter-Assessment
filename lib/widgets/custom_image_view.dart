@@ -156,7 +156,7 @@ class CustomImageView extends StatelessWidget {
         color: color,
         placeholder: (context, url) =>
             placeHolderWidget ??
-             SizedBox(
+            SizedBox(
               height: 30,
               width: 30,
               child: LinearProgressIndicator(

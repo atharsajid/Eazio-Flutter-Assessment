@@ -1,5 +1,4 @@
-import 'package:eazio_flutter_assessment/screens/home_screen/controller/home_screen_controller.dart';
-import 'package:get/get.dart';
+import 'package:eazio_flutter_assessment/utils/app_export.dart';
 
 class InitialBindings extends Bindings {
   @override

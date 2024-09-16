@@ -16,9 +16,13 @@ class AppColors {
   static Color success200 = fromHex('#ABEFC6');
   static Color success50 = fromHex('#ECFDF3');
   static Color orange = fromHex('#E55511');
+  static Color orange400 = fromHex('#FFC107');
+  static Color lightOrange = fromHex('#FFF7ED');
   static Color shadowColor = fromHex('#101828');
   static Color shadowGrayColor = fromHex('#262626');
   static Color white = fromHex('#FFFFFF');
+  static Color lightRed = fromHex('#FFA2A2');
+  static Color green = fromHex('#28BF5B');
 
   static Color fromHex(String hexString) {
     final buffer = StringBuffer();

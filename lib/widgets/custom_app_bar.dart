@@ -1,9 +1,4 @@
-import 'package:eazio_flutter_assessment/constant/app_images.dart';
-import 'package:eazio_flutter_assessment/utils/extensions/double_extensions.dart';
-import 'package:eazio_flutter_assessment/utils/size_utils.dart';
-import 'package:eazio_flutter_assessment/widgets/custom_image_view.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:eazio_flutter_assessment/utils/app_export.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final void Function()? onBellIconTap;

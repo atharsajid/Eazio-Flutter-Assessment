@@ -3,9 +3,10 @@ import 'package:eazio_flutter_assessment/utils/initial_bindings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+  // This will make splash screen lasts for the duration of the delay task.
+  await Future.delayed(const Duration(milliseconds: 300));
   runApp(const MainApp());
 }
 

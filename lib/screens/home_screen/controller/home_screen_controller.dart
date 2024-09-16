@@ -1,7 +1,4 @@
-import 'package:eazio_flutter_assessment/constant/app_strings.dart';
-import 'package:eazio_flutter_assessment/screens/home_screen/model/user_model.dart';
-import 'package:eazio_flutter_assessment/utils/utils.dart';
-import 'package:get/get.dart';
+import 'package:eazio_flutter_assessment/utils/app_export.dart';
 
 class HomeScreenController extends GetxController {
   ///Dummy Content
@@ -22,6 +19,17 @@ class HomeScreenController extends GetxController {
     totalInternship: 250,
   );
 
+  ///Dummy Content
+  List<ChartDataModel> chartData = const <ChartDataModel>[
+    ChartDataModel(day: 'Mon', onTime: 230, late: 320, absents: 250),
+    ChartDataModel(day: 'Tue', onTime: 350, late: 350, absents: 300),
+    ChartDataModel(day: 'Wed', onTime: 190, late: 220, absents: 170),
+    ChartDataModel(day: 'Thu', onTime: 260, late: 330, absents: 240),
+    ChartDataModel(day: 'Fri', onTime: 200, late: 300, absents: 90),
+    ChartDataModel(day: 'Sat', onTime: 380, late: 250, absents: 320),
+    ChartDataModel(day: 'Sun', onTime: 350, late: 230, absents: 220),
+  ];
+
   RxSet<String> summaryButtonSelected = RxSet<String>({AppStrings.thisWeek});
 
   onBellIconTap() {
@@ -33,6 +41,9 @@ class HomeScreenController extends GetxController {
   }
 
   onMenuIconTap() {
+    Utils.toastMessage(AppStrings.willImplementLater);
+  }
+  onManageWidgetTap() {
     Utils.toastMessage(AppStrings.willImplementLater);
   }
 

@@ -11,9 +11,11 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.11
   flutter_svg: ^2.0.10+1
   fluttertoast: ^8.2.5
   get: ^4.6.6
+  syncfusion_flutter_charts: ^25.2.4
 
 dev_dependencies:
   flutter_test:
@@ -55,3 +57,11 @@ flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
   image_path: "assets/icons/app_icon.png"
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/icons/app_icon.png
+  android: true
+  ios: true
+  android_12:
+    color: "#FFFFFF"

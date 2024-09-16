@@ -32,28 +32,31 @@ class HomeScreen extends StatelessWidget {
           16.verticalSpace,
           Row(
             children: [
-              CustomContainer(
-                height: getSize(40),
-                radius: 8,
-                border: Border.all(
-                  color: AppColors.gray300,
-                ),
-                padding: getPadding(left: 12, right: 18),
-                boxShadow: Utils.lightGrayShadow,
-                color: AppColors.white,
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    CustomImageView(
-                      svgPath: AppImages.addIcon,
-                    ),
-                    8.horizontalSpace,
-                    MyText(
-                      text: AppStrings.manageWidgets,
-                      fontWeight: FontWeight.w600,
-                      fontColor: AppColors.gray700,
-                    )
-                  ],
+              GestureDetector(
+                onTap: controller.onManageWidgetTap,
+                child: CustomContainer(
+                  height: getSize(40),
+                  radius: 8,
+                  border: Border.all(
+                    color: AppColors.gray300,
+                  ),
+                  padding: getPadding(left: 12, right: 18),
+                  boxShadow: Utils.lightGrayShadow,
+                  color: AppColors.white,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      CustomImageView(
+                        svgPath: AppImages.addIcon,
+                      ),
+                      8.horizontalSpace,
+                      MyText(
+                        text: AppStrings.manageWidgets,
+                        fontWeight: FontWeight.w600,
+                        fontColor: AppColors.gray700,
+                      )
+                    ],
+                  ),
                 ),
               ),
             ],

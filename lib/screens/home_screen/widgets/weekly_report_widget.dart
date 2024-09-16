@@ -1,5 +1,3 @@
-import 'package:eazio_flutter_assessment/screens/home_screen/widgets/activity_info_widget.dart';
-import 'package:eazio_flutter_assessment/screens/home_screen/widgets/info_widget.dart';
 import 'package:eazio_flutter_assessment/utils/app_export.dart';
 
 class WeeklyReportWidget extends StatelessWidget {
@@ -32,7 +30,7 @@ class WeeklyReportWidget extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     MyText(
-                      text: "${AppStrings.welcomeBack},${user?.name ?? "N/A"}!",
+                      text: "${AppStrings.welcomeBack}, ${user?.name ?? "N/A"}!",
                       fontColor: AppColors.white,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
