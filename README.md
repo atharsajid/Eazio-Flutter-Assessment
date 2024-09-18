@@ -2,6 +2,11 @@
 
 Eazio Flutter Assessment project built using **Flutter** and **Dart**. It implements the **MVC architecture** and uses **GetX** for efficient state management. The project also includes utility classes like **Utils**, **SizeUtils** for responsive design, **Extensions**, and various **Custom Widgets** for a cleaner, reusable, and maintainable codebase.
 
+## Environment
+
+ - Flutter 3.19.6
+ - Dart 3.3.4
+
 ## Table of Contents
 
 - [Features](#features)
